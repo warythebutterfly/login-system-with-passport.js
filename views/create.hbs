@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="main.css" />
+<div class="app">
+
+<form action="/create" method="post">
+  <div>{{#if error}}
+    <p class={{class}}>{{error}}</p>
+    {{/if}}
+    <h1>Create Account</h1></div>
+  <div class="form-group">
+    <label>
+      Username:
+    </label>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Enter your username"
+      required
+    />
+
+  </div>
+  <div class="form-group">
+
+    <label>
+      Password:
+    </label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      placeholder="Enter your password"
+      required
+    />
+  </div>
+  <div class="form-group">
+
+    <label>
+      Confirm Password:
+    </label>
+    <input
+      type="password"
+      name="cpassword"
+      id="cpassword"
+      placeholder="Enter your password"
+      required
+    />
+  </div>
+  <div>
+    <input type="submit" value="Create" />
+  </div>
+  <br>
+  <small><a href="/login">Have an account? Login</a></small>
+</form>
+</div>
